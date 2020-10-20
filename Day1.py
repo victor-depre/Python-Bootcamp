@@ -7,33 +7,10 @@ sum = functools.reduce(add_it, my_list)
 print(sum)
 
 ##
-sum(my_list)
-
-##
-class ChangeList(object):
-    def __init__(self, any_list):
-        self.any_list = any_list
-    def do_add(self):
-        self.output = sum(self.any_list)
-
-create_sum = ChangeList(my_list)
-create_sum.do_add()
-
-print(create_sum.sum)
-
-##
 sum = 0
 for x in my_list:
     sum += x
 print(sum)
-
-##
-def do_add(any_list):
-    sum = 0
-    for x in any_list:
-        sum += x
-    return sum
-print(do_add(my_list))
 
 ##
 print (do_add([1,10,100,1000]))
@@ -262,10 +239,3 @@ def f(x):
             return False
     return True
 f(x)
-
-
-
-
-
-
-
